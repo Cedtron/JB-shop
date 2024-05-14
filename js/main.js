@@ -38,14 +38,14 @@ $(function() {
 		$.each(slicedProducts, function(_, product) {
 			const productHTML = `
 				<div class="col-sm-6 col-md-4 col-lg-4">
-					<div  class="card m-2 card-shadow text-center">
+					<div  class="card m-2 card-shadow text-center" >
 						<img src="images/${product.image}" class="card-img-top img" alt="${product.name}">
 						<div class="card-body">
 							<div class="detail-box mb-2">
 								<h5>${product.name}</h5>
 								<h6>Ugx ${product.price}</h6>
 							</div>
-							<a href="#" class="button btn-p w-45 rtl-1">View</a>
+							<a href="product-veiw.html?id=${product.id}" class="button btn-p w-45 rtl-1">View</a>
 							<a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${encodeURIComponent(product.name)}%20-%20UGX%20${product.price}" class="button btn-s w-45 rtr-1">Buy</a>
 						</div>
 					</div>

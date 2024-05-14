@@ -19,7 +19,9 @@
      
       <!-- Custom styles for this template -->
       <link href="css/nav.css" rel="stylesheet" />
+      <link href="css/aos.css" rel="stylesheet" />
       <link href="css/style.css" rel="stylesheet" />
+      <link href="css/swiper-element-bundle.min.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="css/responsive.css" rel="stylesheet" />
    </head>
@@ -51,15 +53,9 @@
                         <li><a href="about.html" class="nav-link">About</a></li>
                       <li class="has-children">
                         <a href="product.html" class="nav-link">Shop</a>
-                        <ul class="dropdown">
-                          
-                           <li><a href="product.html?category=food" class="nav-link">Food</a></li>
-                           <li><a href="product.html?category=textiles" class="nav-link">Textiles</a></li>
-                           <li><a href="product.html?category=hardware" class="nav-link">Hardware</a></li>
-                           <li><a href="product.html?category=academia" class="nav-link">Academia</a></li>
-                           <li><a href="product.html?category=others" class="nav-link">Others</a></li>
-                       
-                        </ul>
+                        <ul class="dropdown" id="dropdown">                             
+                           <!-- catgeory dropdown            -->
+          </ul>
                       </li>
                       
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -94,131 +90,112 @@
 
  <div class="hero_area">
 
+
+
+
+
          <!-- end header section -->
          <!-- slider section -->
          <section class="slider_section ">
+     
             <div class="slider_bg_box">
                <img src="images/hero.png" alt="">
             </div>
-            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container ">
-                        <div class="row">
-                           <div class="col-md-7 col-lg-6 ">
-                              <div class="detail-box">
-
-                                 <div class="card w-75 h-75  text-center rounded-2">
-                                    <img src="images/rice.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body"> 
-                                     
-                                  <h3>Rice</h3>
-
-
-<button class="rbtn">Shop Now</button>
-
-                                    
-                                 </div>
-                                  </div>
-
-                                 <h1>
-                                    <span>
-                                    Sale 20% Off
-                                    </span>
-                                    <br>
-                                   
-                                 </h1>
-
-                              </div>
-                           </div>
-
-
-
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item ">
-                     <div class="container ">
-                        <div class="row">
-                           <div class="col-md-7 col-lg-6 ">
-                              <div class="detail-box">
-                               
-                                 <div class="card w-75 h-75  text-center rounded-2">
-                                    <img src="images/beef.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body"> 
-                                     
-                                  <h3>Meat</h3>
-
-<button class="hero-btn-pushable" role="button">
-  <span class="hero-btn-shadow"></span>
-  <span class="hero-btn-edge"></span>
-  <span class="hero-btn-front text">
-  Shop Now
-  </span>
-</button>
-
-                                    
-                                 </div>
-                                  </div>
-                                 <h1>
-                                    <span>
-                                    Sale 20% Off
-                                    </span>
-                                   
-                                 </h1>
-                               
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container ">
-                        <div class="row">
-                           <div class="col-md-7 col-lg-6 ">
-                              <div class="detail-box">
+            
+            <swiper-container class="px-2" pagination="true" effect="fade" grab-cursor="true" cube-effect-shadow="true"
+            cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+           
+         
+               <swiper-slide>
+                <div class="detail-box w-50">
+ 
+                   <div class="card w-75 h-75  text-center rounded-2">
+                      <img src="images/rice.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"> 
+                       
+                    <h3>Rice</h3>
+ 
+ 
+ <button class="rbtn">Shop Now</button>
+ 
+                      
+                   </div>
+                    </div>
+ 
+                   <h1>
+                      <span>
+                      Sale 20% Off
+                      </span>
+                      <br>
+                     
+                   </h1>
+ 
+                </div>
+               </swiper-slide>
+ 
+               <swiper-slide>
+                <div class="detail-box w-50">
                                 
-
-                                 <div class="card w-75 h-75  text-center rounded-2">
-                                    <img src="images/lset.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body"> 
-                                     
-                                  <h3>Lab Set</h3>
-
-<button class="hero-btn-pushable" role="button">
-  <span class="hero-btn-shadow"></span>
-  <span class="hero-btn-edge"></span>
-  <span class="hero-btn-front text">
-  Shop Now
-  </span>
-</button>
-
-                                    
-                                 </div>
-                                  </div>
-
-                                 <h1>
-                                    <span>
-                                    Sale 20% Off
-                                    </span>
-                                   
-                                   
-                                 </h1>
-                                
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="container">
-                  <ol class="carousel-indicators">
-                     <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-                     <li data-target="#customCarousel1" data-slide-to="1"></li>
-                     <li data-target="#customCarousel1" data-slide-to="2"></li>
-                  </ol>
-               </div>
-            </div>
+                   <div class="card w-75 h-75  text-center rounded-2">
+                      <img src="images/beef.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"> 
+                       
+                    <h3>Meat</h3>
+ 
+ <button class="hero-btn-pushable" role="button">
+ <span class="hero-btn-shadow"></span>
+ <span class="hero-btn-edge"></span>
+ <span class="hero-btn-front text">
+ Shop Now
+ </span>
+ </button>
+ 
+                      
+                   </div>
+                    </div>
+                   <h1>
+                      <span>
+                      Sale 20% Off
+                      </span>
+                     
+                   </h1>
+                 
+                </div>
+               </swiper-slide>
+           <swiper-slide>
+                <div class="detail-box w-50">
+                                 
+ 
+                   <div class="card w-75 h-75  text-center rounded-2">
+                      <img src="images/lset.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"> 
+                       
+                    <h3>Lab Set</h3>
+ 
+ <button class="hero-btn-pushable" role="button">
+ <span class="hero-btn-shadow"></span>
+ <span class="hero-btn-edge"></span>
+ <span class="hero-btn-front text">
+ Shop Now
+ </span>
+ </button>
+ 
+                      
+                   </div>
+                    </div>
+ 
+                   <h1>
+                      <span>
+                      Sale 20% Off
+                      </span>
+                     
+                     
+                   </h1>
+                  
+                </div>
+               </swiper-slide>
+          </swiper-container>
+  
          </section>
          <!-- end slider section -->
       </div>
@@ -232,7 +209,7 @@
             </div>
             <div class="row">
                <div class="col-md-4">
-                  <div class="box ">
+                  <div class="box "   data-aos="zoom-in-down">
                      <div class="img-box">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                            <g>
@@ -320,7 +297,7 @@
                            </g>
                         </svg>
                      </div>
-                     <div class="detail-box">
+                     <div class="detail-box w-50">
                         <h5>
                            Fast Delivery
                         </h5>
@@ -331,7 +308,7 @@
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="box ">
+                  <div class="box "   data-aos="zoom-in-down">
                      <div class="img-box">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 490.667 490.667;" xml:space="preserve">
                            <g>
@@ -435,7 +412,7 @@
                            </g>
                         </svg>
                      </div>
-                     <div class="detail-box">
+                     <div class="detail-box w-50">
                         <h5>
                            Free Shiping
                         </h5>
@@ -446,7 +423,7 @@
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="box ">
+                  <div class="box "   data-aos="zoom-in-down">
                      <div class="img-box">
                         <svg id="_30_Premium" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" data-name="30_Premium">
                            <g id="filled">
@@ -456,7 +433,7 @@
                            </g>
                         </svg>
                      </div>
-                     <div class="detail-box">
+                     <div class="detail-box w-50">
                         <h5>
                            Best Quality
                         </h5>
@@ -470,42 +447,38 @@
          </div>
       </section>
       <!-- end why section -->
-      
-      <!-- arrival section -->
-      <section class="arrival_section">
-         <div class="container">
-            
-             
-               <div class="row">
 
-                  <div class="col-md-4 ">
-                      <div class="">
-                  <img src="images/bg.png" alt="">
-               </div> 
-                  </div>
-
-                  
-                  <div class="col-md-6 ">
-                     <div class="heading_container remove_line_bt">
-                        <h2>
-                          <span> #NewArrivals</span>
-                        </h2>
-                     </div>
-                     <p style="margin-top: 20px;margin-bottom: 30px;">
-                       Explore the Latest Products at JB CONSORTIUM! Be the First to Discover Exciting New Products in Food, Electronics, Scholastics, and Fashion - Shop Now for the Hottest Trends in Kampala, Uganda!
-                     </p>
-                     <button class="rbtn" role="button">
-                 
-                        Shop Now
-                        
-                     </button>
-                  </div>
-               </div>
-           
+  <!-- arrival section -->
+  <section class="arrival_section">
+   <div class="container py-4">
+    
+         <div class="row "   data-aos="fade-in">
+            <div class="col-md-6">
+         <div class="">
+            <img src="images/bg.png" class="w-100 rounded-2" alt="">
          </div>
-      </section>
-      <!-- end arrival section -->
-      
+         </div>
+            <div class="col-md-6">
+              
+               <div class="heading_container remove_line_bt">
+                  <h2>
+                    <span> #NewArrivals</span>
+                  </h2>
+               </div>
+               <p style="margin-top: 20px;margin-bottom: 30px;">
+                 Explore the Latest Products at JB CONSORTIUM! Be the First to Discover Exciting New Products in Food, Electronics, Scholastics, and Fashion - Shop Now for the Hottest Trends in Kampala, Uganda!
+               </p>
+               <button class="rbtn" role="button">
+           
+                  Shop Now
+                  
+               </button>
+            </div>
+         </div>
+      </div>
+
+</section>
+
       <!-- product section -->
       <section class="product_section layout_padding">
          <div class="container">
@@ -528,30 +501,6 @@
       </section>
       <!-- end product section -->
 
-      <!-- subscribe section -->
-      <section class="subscribe_section">
-         <div class="container-fuild">
-            <div class="box">
-               <div class="row">
-                  <div class="col-md-6 offset-md-3">
-                     <div class="subscribe_form ">
-                        <div class="heading_container heading_center">
-                           <h3>Subscribe To Get Discount Offers</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        <form action="">
-                           <input type="email" placeholder="Enter your email">
-                           <button class="rounded-2">
-                           subscribe
-                           </button>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end subscribe section -->
       <!-- client section -->
       <section class="client_section layout_padding">
          <div class="container">
@@ -571,7 +520,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+                        <div class="detail-box w-50">
                            <h5>
                               Anna Trevor
                            </h5>
@@ -593,7 +542,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+                        <div class="detail-box w-50">
                            <h5>
                               Anna Trevor
                            </h5>
@@ -615,7 +564,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+                        <div class="detail-box w-50">
                            <h5>
                               Anna Trevor
                            </h5>
@@ -733,8 +682,12 @@
       <script src="js/popper.min.js"></script>
       <!-- bootstrap js -->
       <script src="js/bootstrap.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/swiper-element-bundle.min.js"></script>
+
       <!-- custom js -->
       <script src="js/custom.js"></script>
       <script src="js/main.js"></script>
+
    </body>
 </html>

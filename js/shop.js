@@ -5,7 +5,7 @@ let currentPage = 1;
 // Function to create product card HTML
 function createProductCard(product) {
     return `
-        <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class=" col-md-4 col-sm-6 col-lg-4">
             <div class="card m-2 card-shadow text-center">
                 <img src="images/${product.image}" class="img card-img-top" alt="${product.name}">
                 <div class="card-body">
@@ -13,8 +13,8 @@ function createProductCard(product) {
                         <h5 >${product.name}</h5>
                         <h6 >Ugx ${product.price}</h6>
                     </div>
-                    <a href="product-veiw.html?id=${product.id}" class="button btn-p w-45 rtl-1 ">View</a>
-                    <a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${encodeURIComponent(product.name)}%20-%20UGX%20${product.price}" class="button btn-s w-45 rtr-1 ">Buy</a>
+                    <a href="product-veiw.html?id=${product.id}" type="button" class="button btn-p w-45 rtl-1 ">View</a>
+                    <a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${encodeURIComponent(product.name)}%20-%20UGX%20${product.price}" class="button btn-s w-45 rtr-1" type="button">Buy</a>
                 </div>
             </div>
         </div>`;

@@ -9,6 +9,37 @@ function getYear() {
 getYear();
 
 AOS.init();
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Assuming you have already fetched the productsData object
+
+    // Get the dropdown element
+    const dropdown = document.querySelector('#dropdown');
+
+    // Loop through the categories in productsData
+    productsData.categories.forEach(category => {
+        // Create a new list item
+        const listItem = document.createElement('li');
+        // Create a new anchor element
+        const anchor = document.createElement('a');
+        // Set the href attribute of the anchor element
+        anchor.href = `product.html?category=${category.name.toLowerCase()}`;
+        // Set the text content of the anchor element to the category name
+        anchor.textContent = category.name;
+        // Add a class to the anchor element
+        anchor.classList.add('nav-link');
+        // Append the anchor element to the list item
+        listItem.appendChild(anchor);
+        // Append the list item to the dropdown
+        dropdown.appendChild(listItem);
+    });
+});
+
 // client section owl carousel
 $(".client_owl-carousel").owlCarousel({
     loop: true,
