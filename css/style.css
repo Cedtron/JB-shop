@@ -1017,6 +1017,38 @@ a:focus {
   font-size: 18px;
 }
 
+
+
+
+
+@media only screen and (max-width: 853px) {
+  .img {
+    height: 15vh !important;
+  }
+}
+.animated {
+  animation-duration: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+
+
 .footer_section .footer_social a:hover {
   color: #F49728;
 }
