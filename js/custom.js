@@ -1,4 +1,5 @@
 
+$(function() {
   // to get current year
 function getYear() {
     var currentDate = new Date();
@@ -76,3 +77,4 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+})
