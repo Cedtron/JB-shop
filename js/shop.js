@@ -4,21 +4,28 @@ let currentPage = 1;
 
 // Function to create product card HTML
 function createProductCard(product) {
+
+let  p=product.name
+let px=product.price
+
     return `
         <div class=" col-md-2 col-sm-6 col-lg-4">
         <div class="card m-2 card-shadow text-center">
         <img src="images/${product.image}" class="card-img-top img" alt="${product.name}">
         <div class="card-body">
             <div class="detail-box mb-2">
-                <h5>${product.name}</h5>
-                <h6>Ugx ${product.price}</h6>
+                <div class="fw-bold">${product.name}</div>
+                <div class="fs-6">Ugx ${product.price}</div>
             </div>
-            <div class="row">
-                <div class="col-6">
+
+
+
+            <div class="row row row-cols-2">
+                <div class="col">
                     <a href="product-view.html?id=${product.id}" class="btn btn-primary btn-p m-2 w-100 rounded-2">View</a>
                 </div>
-                <div class="col-6">
-                    <a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${encodeURIComponent(product.name)}%20-%20UGX%20${product.price}" class="btn btn-warning btn-s m-2 w-100 rounded-2">Buy</a>
+                <div class="col">
+                    <a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${p}%20-%20UGX%20${px}" class="btn btn-warning btn-s m-2 w-100 rounded-2">Buy</a>
                 </div>
             </div>
         </div>

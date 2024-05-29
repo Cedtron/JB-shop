@@ -2,6 +2,7 @@
 @import url('aos.css');
 * {
   box-sizing: border-box;
+ 
 }
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -941,7 +942,7 @@ a:focus {
 }
 
 .footer_section h4 {
-  font-size: 28px;
+  font-size: 2em;
 }
 
 .footer_section h4,
