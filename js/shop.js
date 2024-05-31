@@ -9,7 +9,7 @@ let  p=product.name
 let px=product.price
 
     return `
-        <div class=" col-md-2 col-sm-6 col-lg-4">
+        <div class=" col-6 col-md-4">
         <div class="card m-2 card-shadow text-center">
         <img src="images/${product.image}" class="card-img-top img" alt="${product.name}">
         <div class="card-body">
