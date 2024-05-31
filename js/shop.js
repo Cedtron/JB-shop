@@ -25,7 +25,7 @@ let px=product.price
                     <a href="product-view.html?id=${product.id}" class="btn btn-primary btn-p m-2 w-100 rounded-2">View</a>
                 </div>
                 <div class="col">
-                    <a href="whatsapp://send?phone=+25677278459&text=I%20want%20to%20buy%20${p}%20-%20UGX%20${px}" class="btn btn-warning btn-s m-2 w-100 rounded-2">Buy</a>
+                    <a href="whatsapp://send?phone=+256709982432&text=I%20want%20to%20buy%20${p}%20-%20UGX%20${px}" class="btn btn-warning btn-s m-2 w-100 rounded-2">Buy</a>
                 </div>
             </div>
         </div>

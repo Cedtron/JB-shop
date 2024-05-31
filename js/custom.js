@@ -12,7 +12,7 @@ getYear();
 AOS.init();
 
 $('#whatsapp').floatingWhatsApp({
-    phone: '0772728459',
+    phone: '256709982432',
     popupMessage: 'Hello, Welcome JB shop?',
     showPopup: true,
     position:	'right'
