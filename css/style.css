@@ -17,7 +17,8 @@ body {
 }
 
 nav ul li a{color:#333;}
-.herob{background-image: url("bg.jpg"); color:#ffffff;}
+.herob{background-image: url("bg.jpg");background-repeat: no-repeat;background-size: auto;
+   color:#ffffff;}
 
 .layout_padding2 {
   padding: 75px 0;
