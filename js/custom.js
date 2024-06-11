@@ -18,14 +18,26 @@ $('#whatsapp').floatingWhatsApp({
     position:	'right'
   });
 
+  const categoryList = document.getElementById('category-list');
 
+  productsData.categories.forEach(category => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item';
+
+      const anchor = document.createElement('a');
+      anchor.href = `product.html?category=${category.name.toLowerCase()}`;
+      anchor.textContent = category.name;
+
+      li.appendChild(anchor);
+      categoryList.appendChild(li);
+  });
 
 
 document.addEventListener('DOMContentLoaded', function() {
     // Assuming you have already fetched the productsData object
 
     // Get the dropdown element
-    const dropdown = document.querySelector('#dropdown');
+    const dropdown = $('#dropdown');
 
     // Loop through the categories in productsData
     productsData.categories.forEach(category => {
